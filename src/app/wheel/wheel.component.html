@@ -1,0 +1,11 @@
+<div class="wheel-container">
+    <div #wheel class="wheel">
+        <div *ngFor="let name of names; let i = index" class="segment"
+            [style.transform]="'rotate(' + (i * (360 / names.length)) + 'deg)'">
+            {{ name }}
+        </div>
+    </div>
+    <button (click)="spinWheel()">Spin</button>
+</div>
+
+<div>{{winner}}</div>

@@ -1,0 +1,36 @@
+.wheel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .wheel {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #333;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .segment {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform-origin: center;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

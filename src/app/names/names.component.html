@@ -1,0 +1,11 @@
+<h2>Name List</h2>
+
+<input type="text" [(ngModel)]="newName" placeholder="Enter name">
+<button (click)="addName()">Add Name</button>
+
+<ul>
+    <li *ngFor="let name of names; let i = index">
+        {{ name }}
+        <button (click)="removeName(i)">Remove</button>
+    </li>
+</ul>
